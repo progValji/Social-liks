@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey700: hsl(0, 0%, 20%);
+    --grey800: hsl(0, 0%, 12%);
+    --grey900: hsl(0, 0%, 8%);
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: var(--grey900);
+    min-height: 100vh;
+    display: flex;
+}
+
+.article{
+    background-color: var(--grey800);
+    margin: auto;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.article__presentacion{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.avatar{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.title{
+    color: var(--white);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.article__lugar{
+    color: var(--green);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.article__profesion{
+    text-align: center;
+    color: var(--white);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.article__links{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link{
+    width: 100%;
+    background-color: var(--grey700);
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-weight: 600;
+    /* transition: color .5s, background-color .5s .5s; */
+    transition: background-color .3s, color .3s .3s;
+}
+
+.link:hover{
+    background-color: var(--green);
+    color: var(--grey700);
+}
