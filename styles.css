@@ -38,7 +38,7 @@ body{
     height: 80px;
     object-fit: cover;
     border-radius: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .title{
@@ -57,7 +57,7 @@ body{
     text-align: center;
     color: var(--white);
     font-size: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .article__links{
@@ -82,4 +82,12 @@ body{
 .link:hover{
     background-color: var(--green);
     color: var(--grey700);
+    cursor: url(assets/images/bxs-hand-up.svg), auto;
+}
+
+@media screen and (max-width: 390px){
+    .article{
+        min-width: 85%;
+        padding: 20px;
+    }
 }
